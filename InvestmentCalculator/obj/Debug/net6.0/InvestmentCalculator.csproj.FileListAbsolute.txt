@@ -1,0 +1,17 @@
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\InvestmentCalculator.exe
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\InvestmentCalculator.deps.json
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\InvestmentCalculator.runtimeconfig.json
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\InvestmentCalculator.dll
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\InvestmentCalculator.pdb
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.csproj.AssemblyReference.cache
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.AssemblyInfoInputs.cache
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.AssemblyInfo.cs
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.csproj.CopyComplete
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.dll
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\refint\InvestmentCalculator.dll
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.pdb
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\InvestmentCalculator.genruntimeconfig.cache
+C:\Users\Ryan Burgess\source\repos\InvestmentCalculator\InvestmentCalculator\obj\Debug\net6.0\ref\InvestmentCalculator.dll

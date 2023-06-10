@@ -1,0 +1,75 @@
+{
+      "StockETFs": [
+        {
+          "Ticker": "SPY",
+          "Description": "SPDR S&P 500 ETF",
+          "Yield": 0.0149,
+          "TotalReturnsOverLife": 0.0971
+        },
+        {
+          "Ticker": "VYM",
+          "Description": "Vanguard High Dividend Yield Index Fund",
+          "Yield": 0.0332,
+          "TotalReturnsOverLife": 0.0761
+        },
+        {
+          "Ticker": "VYMI",
+          "Description": "Vanguard Inter. High Dividend Yield ETF",
+          "Yield": 0.044,
+          "TotalReturnsOverLife": 0.0676
+        },
+        {
+          "Ticker": "VGT",
+          "Description": "Vanguard Information Technology ETF",
+          "Yield": 0.0071,
+          "TotalReturnsOverLife": 0.1248
+        },
+        {
+          "Ticker": "SOXX",
+          "Description": "iShares Semiconductor ETF",
+          "Yield": 0.0096,
+          "TotalReturnsOverLife": 0.097
+        },
+        {
+
+        }
+      ],
+  "RealEstateFunds": [
+    {
+      "Ticker": "VNQ",
+      "Description": "Vanguard Real Estate Index Fund",
+      "Yield": 0.0427,
+      "TotalReturnsOverLife": 0.0714
+    },
+    {
+      "Ticker": "FSHOX",
+      "Description": "Fidelity Select Construction and Housing Portfolio",
+      "Yield": 0.0076,
+      "TottalReturnsOverLife": 0.1210
+    }
+  ],
+  "BondFunds": [
+    {
+      "Ticker": "BND",
+      "Description": "Vanguard Total Bond Market Index Fund",
+      "Yield": 0.0269,
+      "TotalReturnsOverLife": 0.0301
+    },
+    {
+      "Ticker": "ANGL",
+      "Description": "Vaneck Fallen Angel High Yield Bond ETF",
+      "Yield": 0.0491,
+      "TotalReturnsOverLife": 0.0636
+    },
+    {
+      "Ticker": "FAGIX",
+      "Description": "Fidelity Capital & Income Fund",
+      "Yield": 0.0682,
+      "TotalReturnsOverLife": 0.0927
+    }
+  ]
+  "SavingsAccount": {
+      "SavingsBank": "Fidelity",
+      "InterestRate": 0.0473
+    }
+}
