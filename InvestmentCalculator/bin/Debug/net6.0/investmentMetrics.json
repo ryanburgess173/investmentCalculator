@@ -1,39 +1,66 @@
 {
-      "StockETFs": [
-        {
-          "Ticker": "SPY",
-          "Description": "SPDR S&P 500 ETF",
-          "Yield": 0.0149,
-          "TotalReturnsOverLife": 0.0971
-        },
-        {
-          "Ticker": "VYM",
-          "Description": "Vanguard High Dividend Yield Index Fund",
-          "Yield": 0.0332,
-          "TotalReturnsOverLife": 0.0761
-        },
-        {
-          "Ticker": "VYMI",
-          "Description": "Vanguard Inter. High Dividend Yield ETF",
-          "Yield": 0.044,
-          "TotalReturnsOverLife": 0.0676
-        },
-        {
-          "Ticker": "VGT",
-          "Description": "Vanguard Information Technology ETF",
-          "Yield": 0.0071,
-          "TotalReturnsOverLife": 0.1248
-        },
-        {
-          "Ticker": "SOXX",
-          "Description": "iShares Semiconductor ETF",
-          "Yield": 0.0096,
-          "TotalReturnsOverLife": 0.097
-        },
-        {
-
-        }
-      ],
+  "StockETFs": [
+    {
+      "Ticker": "SPY",
+      "Description": "SPDR S&P 500 ETF",
+      "Yield": 0.0149,
+      "TotalReturnsOverLife": 0.0971
+    },
+    {
+      "Ticker": "VYM",
+      "Description": "Vanguard High Dividend Yield Index Fund",
+      "Yield": 0.0332,
+      "TotalReturnsOverLife": 0.0761
+    },
+    {
+      "Ticker": "VYMI",
+      "Description": "Vanguard Inter. High Dividend Yield ETF",
+      "Yield": 0.044,
+      "TotalReturnsOverLife": 0.0676
+    },
+    {
+      "Ticker": "VGT",
+      "Description": "Vanguard Information Technology ETF",
+      "Yield": 0.0071,
+      "TotalReturnsOverLife": 0.1248
+    },
+    {
+      "Ticker": "SOXX",
+      "Description": "iShares Semiconductor ETF",
+      "Yield": 0.0096,
+      "TotalReturnsOverLife": 0.097
+    },
+    {
+      "Ticker":"FSELX",
+      "Description":"Fidelity Select Semiconductors Portfolio",
+      "Yield":0.0012,
+      "TotalReturnsOverLife": 0.1405
+    },
+    {
+      "Ticker":"FMILX",
+      "Description":"Fidelity New Millenium Fund",
+      "Yield":0.0147,
+      "TotalReturnsOverLife": 0.1276
+    },
+    {
+      "Ticker":"FOSFX",
+      "Description":"Fidelity Overseas Fund",
+      "Yield":0.0069,
+      "TotalReturnsOverLife":0.0935
+    },
+    {
+      "Ticker":"FSCSX",
+      "Description":"Fidelity Select Software and IT Services Portfolio",
+      "Yield":0.0,
+      "TotalReturnsOverLife": 0.1579
+    },
+    {
+      "Ticker":"FSMEX",
+      "Description":"Fidelity Select Medical Technology and Devices Portfolio",
+      "Yield":0.0,
+      "TotalReturnsOverLife":0.1364
+    }
+  ],
   "RealEstateFunds": [
     {
       "Ticker": "VNQ",
@@ -45,7 +72,7 @@
       "Ticker": "FSHOX",
       "Description": "Fidelity Select Construction and Housing Portfolio",
       "Yield": 0.0076,
-      "TottalReturnsOverLife": 0.1210
+      "TotalReturnsOverLife": 0.1210
     }
   ],
   "BondFunds": [
@@ -67,9 +94,11 @@
       "Yield": 0.0682,
       "TotalReturnsOverLife": 0.0927
     }
-  ]
+  ],
   "SavingsAccount": {
       "SavingsBank": "Fidelity",
       "InterestRate": 0.0473
-    }
+  },
+  "ReturnOnGold":0.075,
+  "ReturnOnSilver":0.051
 }

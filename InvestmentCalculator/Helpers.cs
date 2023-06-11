@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvestmentCalculator
 {
-    internal class Helpers
+    public class Helpers
     {
         public bool IsNumeric(string input)
         {
@@ -18,6 +18,25 @@ namespace InvestmentCalculator
             {
                 return false;
             }
+        }
+        public Fund FindInvestmentProduct(List<Fund> funds, string ticker)
+        {
+            bool fundFound = false;
+            Fund fundToReturn = new Fund();
+            foreach(Fund fund in funds)
+            {
+                if (fund.Ticker == ticker)
+                {
+                    fundFound = true;
+                    fundToReturn = fund;
+                }
+            }
+            if(fundFound == false)
+            {
+                Console.WriteLine("\n\nFund not found.\n\n");
+                return fundToReturn;
+            }
+            return fundToReturn;
         }
     }
 }
