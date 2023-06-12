@@ -1,5 +1,5 @@
 {
-  "StockETFs": [
+  "Funds": [
     {
       "Ticker": "SPY",
       "Description": "SPDR S&P 500 ETF",
@@ -59,9 +59,7 @@
       "Description":"Fidelity Select Medical Technology and Devices Portfolio",
       "Yield":0.0,
       "TotalReturnsOverLife":0.1364
-    }
-  ],
-  "RealEstateFunds": [
+    },
     {
       "Ticker": "VNQ",
       "Description": "Vanguard Real Estate Index Fund",
@@ -73,9 +71,7 @@
       "Description": "Fidelity Select Construction and Housing Portfolio",
       "Yield": 0.0076,
       "TotalReturnsOverLife": 0.1210
-    }
-  ],
-  "BondFunds": [
+    },
     {
       "Ticker": "BND",
       "Description": "Vanguard Total Bond Market Index Fund",
@@ -93,12 +89,20 @@
       "Description": "Fidelity Capital & Income Fund",
       "Yield": 0.0682,
       "TotalReturnsOverLife": 0.0927
+    },
+    {
+      "Ticker":"Gold",
+      "Yield":0.0,
+      "TotalReturnsOverLife":0.075
+    },
+    {
+      "Ticker":"Silver",
+      "Yield":0.0,
+      "TotalReturnsOverLife":0.051
     }
   ],
   "SavingsAccount": {
       "SavingsBank": "Fidelity",
       "InterestRate": 0.0473
-  },
-  "ReturnOnGold":0.075,
-  "ReturnOnSilver":0.051
+  }
 }

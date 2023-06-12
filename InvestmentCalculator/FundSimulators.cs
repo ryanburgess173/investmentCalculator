@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using InvestmentCalculator;
 
 namespace InvestmentCalculator
@@ -50,12 +51,12 @@ namespace InvestmentCalculator
                 SavingsAccountBalance = SavingsAccountBalance - (principal/timeline);
                 CashFlowFromSavings = (SavingsAccountBalance * (investmentData.SavingsAccount.InterestRate / 12));
 
-                FSELX_Product = helperMethods.FindInvestmentProduct(investmentData.StockETFs, "FSELX");
+                FSELX_Product = helperMethods.FindInvestmentProduct(investmentData.Funds, "FSELX");
                 FSELX_Capital_Appreciation_Rate = ((FSELX_Product.TotalReturnsOverLife - FSELX_Product.Yield) / 12);
-                FSELX_Balance = FSELX_Balance + (FSELX_Balance * FSELX_Capital_Appreciation_Rate) + ((principal / timeline)*0.2);
+                FSELX_Balance = FSELX_Balance + (FSELX_Balance * FSELX_Capital_Appreciation_Rate) + ((principal / timeline) * 0.2);
                 CashFlowFromFSELX = FSELX_Balance * (FSELX_Product.Yield / 12);
 
-                FMILX_Product = helperMethods.FindInvestmentProduct(investmentData.StockETFs, "FMILX");
+                FMILX_Product = helperMethods.FindInvestmentProduct(investmentData.Funds, "FMILX");
                 FMILX_Capital_Appreciation_Rate = ((FMILX_Product.TotalReturnsOverLife - FMILX_Product.Yield) / 12);
                 FMILX_Balance = FMILX_Balance + (FMILX_Balance * FMILX_Capital_Appreciation_Rate) + ((principal / timeline) * 0.2);
                 CashFlowFromFMILX = FMILX_Balance * (FMILX_Product.Yield / 12);
@@ -67,7 +68,50 @@ namespace InvestmentCalculator
         }
         public void TraditionalFund(InvestmentDataObject investmentData, double principal, int timeline)
         {
-            Console.WriteLine("Traditional Fund");
+            List<string> fundsNeeded = new List<string>() { "FSELX", "FMILX", "FOSFX", "FSCSX", "FSMEX", "VNQ", "FSHOX", "FAGIX", "Gold", "Silver" };
+            List<double> allocations = new List<double>() { 0.1, 0.1, 0.1, 0.1, 0.1, 0.075, 0.025, 0.25, 0.15, 0.05 };
+            double SavingsBalance = 0.0;
+            List<double> fundBalances = new List<double>() { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+            Console.WriteLine("\n============================================================Balances============================================================");
+            Console.Write("|\tSavings Account");
+            foreach(string fundName in fundsNeeded)
+            {
+                Console.Write("\t|\t{0}", fundName);
+            }
+            Console.Write("\t|\tCash Flow\t|\n");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("");
+            double totalCashFlow = 0.0;
+            for(int i=0; i<timeline; i++)
+            {
+                for(int j=0; j<fundsNeeded.Count; j++)
+                {
+                    Fund currentFund = helperMethods.FindInvestmentProduct(investmentData.Funds, fundsNeeded[j]);
+                    double fundCapitalAppreciationRatePerMonth = (currentFund.TotalReturnsOverLife - currentFund.Yield) / 12;
+                    double fundCashFlowRatePerMonth = currentFund.Yield / 12;
+                    totalCashFlow += fundBalances[j] * fundCashFlowRatePerMonth;
+                    fundBalances[j] = fundBalances[j] + (fundBalances[j] * fundCapitalAppreciationRatePerMonth) + ((principal / timeline) * allocations[j]);
+                }
+            }
+
+        }
+        public void CashFlowFund(InvestmentDataObject investmentData, double principal, int timeline)
+        {
+            List<string> fundsNeeded = new List<string>() { "VYM", "VYMI", "FAGIX", "BND", "ANGL" };
+            List<double> allocations = new List<double>() { 0.35, 0.35, 0.1, 0.1, 0.1 };
+            double SavingsBalance = 0.0;
+            List<double> fundBalances = new List<double>() { 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+            Console.WriteLine("\n============================================================Balances============================================================");
+            Console.Write("|\tSavings Account");
+            foreach (string fundName in fundsNeeded)
+            {
+                Console.Write("\t|\t{0}", fundName);
+            }
+            Console.Write("\t|\tCash Flow\t|\n");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------");
+
         }
     }
 }

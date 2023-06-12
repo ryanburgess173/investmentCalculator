@@ -19,7 +19,7 @@ internal class Program
             bool optionChosen = false;
             while (!optionChosen)
             {
-                Console.WriteLine("========================================Investment Options=======================================");
+                Console.WriteLine("\n\n========================================Investment Options=======================================");
                 Console.WriteLine("1. GrowthFund. Just Stock Mutual Funds. Maximum Growth");
                 Console.WriteLine("2. TraditionalFund. 50% Stock Funds, 25% Bond Funds, 10% Gold, 5% Silver, 10% Real Estate Funds");
                 Console.WriteLine("3. CashFlowFund. Maximum Cash Flow");
@@ -39,6 +39,9 @@ internal class Program
                         break;
                     case 2:
                         simulator.TraditionalFund(investmentData, userVariables.PrincipalLumpSum, userVariables.TimelineInMonths);
+                        break;
+                    case 3:
+                        simulator.CashFlowFund(investmentData, userVariables.PrincipalLumpSum, userVariables.TimelineInMonths);
                         break;
                     case 0:
                         System.Environment.Exit(0);
