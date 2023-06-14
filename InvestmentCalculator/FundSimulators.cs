@@ -51,6 +51,9 @@ namespace InvestmentCalculator
             for (int i = 0; i < timeline; i++)
             {
                 totalCashFlow = 0.0;
+                SavingsBalance = SavingsBalance - (principal / timeline);
+                Console.Write("|\t${0}", Math.Round(SavingsBalance, 2));
+                totalCashFlow += ((SavingsBalance * investmentData.SavingsAccount.InterestRate) / 12);
                 for (int j = 0; j < fundsNeeded.Count; j++)
                 {
                     Fund currentFund = helperMethods.FindInvestmentProduct(investmentData.Funds, fundsNeeded[j]);
